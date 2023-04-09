@@ -103,4 +103,8 @@ header-text h1 span{
     width:  100%;
     border-radius: 15px;
 }
-
+.sub-tittlw{
+    font-size: 60%;
+    font-weight: 600;
+    color: #fff;
+}
