@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
 
-   <!---------About-------->
+        <nav>
+
+<img src="logoneww.jpg" class="logoneww"
+   
+    !---------About-------->
 
     <div id="About">
     <div class="container">
@@ -23,29 +28,54 @@
         Through Fullstack Academy, I was able to leverage my creative skills with an incredible web development toolkit.
         I offer both design and development services of web interfaces and applications + websites!</p>
         
-<div class="tab-tittle">
-<p class="tab-links active-link"onclick="opentab{'skills'}">Skills</p>
-<p class="tab-links"onclick="opentab{'experience'}">Experience</p>
-<p class="tab-links"onclick="opentab{'education'}">Education</p>
+<div class="tab-tittles">
+<p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+<p class="tab-links" onclick="opentab('Experience')" >Experience</p>
+<p class="tab-links" onclick="opentab('Education')" >Education</p>
 </div>
 
-<div class="tab-contents active-tab" id="skills" >
+<div class="tab-contents active-tab" id="skills">
+
 <ul>
     <li><span>Web development</span><br>Web App Development</li>
     <li><span>App development</span><br>Building IOS/Android apps</li>
-    
 </ul>
-<div class="tab-contents active-tab" id="experience" > 
 </div>
 
-<div class="tab-contents active-tab" id="education" > 
-</div>
+<div class="tab-contents" id="Experience">
 
-</div>
-    
+    <ul>
+        <li><span>2022-current</span><br>Working on HTML,CSS,Javascript at Fullstack Academy</li>
+        <li><span>2021-2022</span><br>Finishing basic projects in Codeacademy</li>
+    </ul>
     </div>
-    </div>
+    <div class="tab-contents" id="Education">
+
+        <ul>
+            <li><span>Lorem ipsum dolor sit amet</span><br>Duis aute irure dolor in reprehenderit</li>
+            <li><span>culpa qui officia</span><br>deserunt mollit anim </li>
+        </ul>
+        </div>
+            
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab (tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab")
+
+    }
 
 </script>
+
+
 </body>
 </html>

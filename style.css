@@ -91,9 +91,10 @@ header-text h1 span{
     color: #ababab;
 }
 .row{
-    display: flex;
-    justify-content:safe;
-    flex-wrap:wrap;
+    display:flex;
+justify-content:safe;
+flex-wrap:wrap;
+
 
 
 }
@@ -101,28 +102,22 @@ header-text h1 span{
     flex-basis: 35%;
 }
 .about-col-1 img{
-  width: 100%;
-  border-radius: 15%;
-
+   width:100%;
+   border: radius 15px;
 
 }
 .about-col-2{
     flex-basis: 60%;
 }
 .sub-tittle{
-font-size: 60px;
-font-weight: 600;
-color:#fff;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
 
 }
-
-
-
-.tab-tittle{
-    display: flex;
-    margin: 20px 0 40px;
-
-}
+.tab-tittles{
+    display:flex;
+    margin: 20px 0 40px;}
 
 .tab-links{
     margin-right: 50px;
@@ -140,26 +135,23 @@ color:#fff;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
-
 }
+
 .tab-links.active-link::after{
-    width:50%;
+    width: 50%;
 }
-
----------for red underline under experience not working ----------
-
 .tab-contents ul li{
-    list-style: none;
+    list-style-type:st
     margin: 10px 0;
-}
-ab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
-}
 
--------
-
------portfolio---
-#Portfolio{
-    padding: 50px 0;
+}
+.tab-contents ul li span{
+    color:#b54769;
+    font-size: 16px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display:block;
 }
